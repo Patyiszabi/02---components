@@ -1,11 +1,16 @@
 <script setup>
-
+    defineProps({
+        title: {
+            type: String,
+            required: true
+        }
+    });
  </script>
 
 <template>
     <nav>
         <ul>
-            <li><a href="/">Vue App</a></li>
+            <li><a href="/">{{ title }}</a></li>
             <li><a href="https://vuejs.org/">Vue.js</a></li>
         </ul>
     </nav>

@@ -1,11 +1,22 @@
 <script setup>
+    const props =defineProps({
+        title: {
+            type: String,
+            required: true,         
+            default: 'My Vue App'
+        }
+    });
+
+function alertTitle() {
+        alert(`The title is: ${props.title}`);
+    }
 
  </script>
 
 <template>
     <nav>
         <ul>
-            <li><a href="/">Vue App</a></li>
+            <li><a href="/" @click="alertTitle">{{ title }}</a></li>
             <li><a href="https://vuejs.org/">Vue.js</a></li>
         </ul>
     </nav>

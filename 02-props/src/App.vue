@@ -7,7 +7,7 @@ import SiteContent from './components/SiteContent.vue';
 
 <template>
   <header>
-    <MainNavigation />
+    <MainNavigation title="My Vue App" />
   </header>
 
   <main>
