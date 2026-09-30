@@ -14,8 +14,10 @@ setTimeout(() => {
 }, 3000);
 
 
-function handleInputClick() {
-  console.log('Input field clicked!');
+const name = ref('');
+
+function logMessage() {
+  console.log(name);
 }
 
 </script>
@@ -27,7 +29,7 @@ function handleInputClick() {
 
   <main>
     <SiteContent />
-    <InputField @on-input="handleInputClick" />
+    <InputField @on-input="logMessage" />
   </main>
 
   <footer>
